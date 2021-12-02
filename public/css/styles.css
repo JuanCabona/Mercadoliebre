@@ -1,0 +1,156 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Ubuntu:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+    align-items: center;
+}
+
+.descuentos {
+    font-size: 16px;
+    color:#39b54a;
+    align-items: center;
+}
+
+.descripcion {
+    font-size: 16px;
+    display: none;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.parrafoHeader {
+    text-align:center;
+}
+
+.burger-menu {
+    color: white;
+    background-color: #1259c3;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    padding-top: 8px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+
+}
+
+main    {
+    width: 90vw;
+    margin:auto;
+  }
+
+.articleMain {
+    margin: 5px;
+    background-color: white;
+}
+
+.sectionFooter {
+    margin: auto;
+    background-color: white;
+}
+
+.fa-credit-card, .fa-gift, .fa-user-shield {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: blue;
+    }
+
+.articleMain img {
+    text-align: center;
+   
+}
+
+.divCostoEnvio {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.fa-truck {
+    color:#39b54a;
+    align-self: flex-end;
+}
+
+.bannerHeader {
+    width: 100vw;
+}
+
+.ulHeader {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+
+.logoMercadoliebre {
+    width: 50vw;
+}
+
+.articleFooter img {
+    width: 100%;
+} 
+
+
+
+
+@media (min-width: 361px) {
+    
+    .descripcion {
+        display:initial;
+    }
+    .articleMain {
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .ulHeader {
+        display:initial;
+      }
+      .burger-menu {
+          display: none;
+      }
+}
+    
+
+@media (min-width: 769px) {
+    .descripcion {
+        display:initial;
+    }
+    .ulHeader {
+        display:initial;
+      }
+    .burger-menu {
+        display: none;
+    }
+}
+
+
+
