@@ -28,6 +28,7 @@ body {
     font-size: 16px;
     color:#39b54a;
     align-items: center;
+    margin-top: 1.5px;
 }
 
 .descripcion {
@@ -56,6 +57,10 @@ header {
     box-sizing: border-box;
     margin-bottom: 15px;
 
+}
+
+section article img {
+    width: 90%;
 }
 
 main    {
@@ -90,13 +95,19 @@ main    {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-}
+    flex-direction: column;
+    gap: 5px;
+ }
 
 .fa-truck {
     color:#39b54a;
     align-self: flex-end;
+}
+
+.divPreciodescuento {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .bannerHeader {
@@ -114,8 +125,10 @@ main    {
     width: 50vw;
 }
 
-.articleFooter img {
+.articleFooter  {
     width: 100%;
+    text-align: center;
+    
 } 
 
 
