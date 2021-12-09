@@ -8,6 +8,15 @@
     box-sizing: border-box;
     }
 
+    .control {
+        width: 100%;
+        padding: 8px 8px;
+    }
+
+    .listaMenu {
+        padding: 5px;
+        
+    }
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -15,6 +24,33 @@ body {
     background-color: #ebebeb;
 }
 
+.linkHeader {
+text-decoration: none;
+font-weight: bold;
+}
+
+.linkHeader:visited {
+    text-decoration: none;
+    color:black;
+    }
+.boton-formulario {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.control-formulario {
+    margin-bottom: 15px;
+    }
+.control-formulario label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
 .titulares {
     font-size: 24px;
 }
@@ -30,6 +66,8 @@ body {
     align-items: center;
     margin-top: 1.5px;
 }
+
+
 
 .descripcion {
     font-size: 16px;
@@ -73,6 +111,51 @@ main    {
     background-color: white;
 }
 
+.botonLogin:hover {
+    background-color: #0022AA;
+}
+
+.busqueda {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+}
+
+.articleMain:hover {
+   
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   
+}
+
+.articleMain:hover .fas fa-truck {
+   
+    transform: rotate(90);
+   
+}
+
+.divNavA {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px;
+}
+.divNavB {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px;
+ 
+    
+}
+
+.divHeaderC {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.articleMain:hover .descripcion{
+    display: initial;
+}
+
 .sectionFooter {
     margin: auto;
     background-color: white;
@@ -90,6 +173,19 @@ main    {
    
 }
 
+.bodyLogin {
+ 
+    margin: 20px 20px;
+    padding: 20px 20px;
+    width: 100vw;
+    height: 100vh;
+  
+}
+
+.elementoFormulario {
+margin: 5px;
+}
+
 .divCostoEnvio {
     border-top: 1px solid #ebebeb;
     padding: 15px;
@@ -98,16 +194,30 @@ main    {
     flex-direction: column;
     gap: 5px;
  }
+ 
+ .checkboxCat {
+     display: inline;
+     margin: 5px;
+ }
 
 .fa-truck {
     color:#39b54a;
     align-self: flex-end;
 }
 
+.fa-truck:hover {
+    transform: rotateZ(270deg);
+}
+
 .divPreciodescuento {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+}
+
+.create-form {
+    padding: 20px 15px;
+    
 }
 
 .bannerHeader {
@@ -136,13 +246,10 @@ main    {
 
 @media (min-width: 361px) {
     
-    .descripcion {
-        display:initial;
-    }
+ 
     .articleMain {
         padding: 15px;
         margin: 15px;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .ulHeader {
         display:initial;
@@ -154,15 +261,51 @@ main    {
     
 
 @media (min-width: 769px) {
-    .descripcion {
-        display:initial;
-    }
+  
     .ulHeader {
         display:initial;
       }
     .burger-menu {
         display: none;
     }
+    .divArticulos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sectionFooter {
+        display: flex;
+      
+    }
+
+    .articleFooter  {
+        
+        margin: 40px;
+        padding: 20px;
+
+    } 
+    .articleMain {
+        width: 20vw;
+    }
+    .divLogoBusqueda {
+        display: flex;
+        flex-wrap: wrap;  
+         align-items: center;
+        justify-content: space-between;
+     
+    }
+    
+    
+.elementosHeader {
+    width: 33vw;
+    height: 15vh;
+ 
+}  
+
+.fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover {
+    
+    color: rgb(58, 176, 223);
+    }
+
 }
 
 

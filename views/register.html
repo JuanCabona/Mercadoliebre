@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <main class="mainRegister">
+        <form action="/registro" method="post">
+            <div>
+                <input class="elementoFormulario" type="text" name="nombreYApellido" id="nombreYApellido" placeholder="Nombre y apellido:">
+            </div>
+            <div>
+                <input class="elementoFormulario" type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario">
+            </div>
+            <div>
+                <label class="elementoFormulario" for="fechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+            </div>
+            <div>
+                <input class="elementoFormulario" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+            </div>
+            <div>
+                <label class="elementoFormulario" >Perfil de usuario:</label>
+                <label for="comprar">Comprar</label>
+                <input type="radio" name="perfilUsuario" value="comprar" id="comprar">
+                <label class="elementoFormulario" for="vender">Vender</label>
+                <input class="elementoFormulario" type="radio" name="perfilUsuario" value="vender" id="vender">
+            </div>
+            <div>
+                <p class="elementoFormulario checkboxCat" >Categorías de interés:</p>
+                   <input class="checkboxCat" type="checkbox" name="categoriasDeInteres" value="electro" id="electro">
+                   <label for="electro">Electro</label>
+                   <input type="checkbox" name="categoriasDeInteres" value="moda" id="moda">
+                   <label for="moda">Moda</label>
+                   <input type="checkbox" name="categoriasDeInteres" value="hogar" id="Hogar">
+                   <label for="hogar">Hogar</label>
+                   <input type="checkbox" name="categoriasDeInteres" value="jugueteria" id="jugueteria">
+                   <label for="jugueteria">Juguetería</label>
+                   <input type="checkbox" name="categoriasDeInteres" value="vidaSana" id="vidaSana">
+                   <label for="vidaSana">Vida Sana</label>
+             </div>
+             <div>
+                <label class="elementoFormulario" for="FotoDeUsuario">Foto de usuario:</label>
+                <input class="elementoFormulario" type="file" name="fotoDeUsuario" id="fotoDeUsuario">
+            </div>
+            <div>
+               <input class="elementoFormulario" type="password" name="pasword" id="password" placeholder="Password:">
+            </div>
+            <div>
+                <input class="elementoFormulario" type="password" name="confirmarPassword" id="confirmarPassword" placeholder="Confirmar password:">
+            </div>
+            <button class="elementoFormulario" type="submit">Enviar</button>
+            <button class="elementoFormulario" type="reset">Borrar</button>
+
+
+        </form>
+    </main>
+</body>
+</html>
