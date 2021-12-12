@@ -80,6 +80,7 @@ header {
 
 .parrafoHeader {
     text-align:center;
+    margin: 8px;
 }
 
 .burger-menu {
@@ -117,9 +118,16 @@ main    {
 
 .busqueda {
     width: 100%;
-    margin: 0;
+    margin: 5px;
     position: relative;
     top: 50%;
+    border-radius: 8px;
+}
+
+.fa-search {
+    margin: 0 615px;
+    position: relative;
+    top: 40%;
 }
 
 .articleMain:hover {
@@ -233,6 +241,7 @@ margin: 5px;
 
 .logoMercadoliebre {
     width: 50vw;
+    padding: 40px;
 }
 
 .articleFooter  {
@@ -304,6 +313,10 @@ margin: 5px;
 .fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover {
     
     color: rgb(58, 176, 223);
+    }
+
+    .logoMercadoliebre {
+        width: 100px;
     }
 
 }
